@@ -10,17 +10,13 @@ function Count() {
     function showData(){
       dispatch(fetchUser('https://fakestoreapi.com/products'))
     }
-      //  dispatch(fetchUser('https://fakestoreapi.com/products'))
-    // let myState ;
+     
       useEffect(() => {
-    //  myState = useSelector((state)=>state.reducer)
-      // dispatch(fetchUser('https://fakestoreapi.com/products'))
+    
       showData()
          //eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
-      // useEffect(()=>{
-
-      // },[data])
+      
  
   
     return (

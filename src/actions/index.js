@@ -7,7 +7,7 @@ export const fetchUser=(url)=>{
          
          const res = await  fetch(url)
          const data = await res.json();
-        //    dispatch(setProducts(data.products));
+       
            dispatch({ type:SET_PRODUCTS, payload: data })
         }
     }
@@ -16,7 +16,7 @@ export const fetchUser=(url)=>{
            
            const res = await  fetch(url)
            const data = await res.json();
-          //    dispatch(setProducts(data.products));
+      
              dispatch({ type:SET_PRODUCT, payload: data })
           }
       }
@@ -37,11 +37,6 @@ export const fetchUser=(url)=>{
         };
       }
   }
-// export const fetchData = (data) =>{
-//     return {
-//         type:"fetch_data",
-//         payload: data
-//     }
-// }
+
 
 

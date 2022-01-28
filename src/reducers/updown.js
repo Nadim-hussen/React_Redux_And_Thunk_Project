@@ -2,13 +2,7 @@
 import { SET_PRODUCTS , SET_PRODUCT} from "../actions/type.js";
 const initialState =[]
 
-// const changeNumber = (state = initialState,{type,payload})=>{
-// switch(type){
-//     case "fetch_data" : return {...state, product:payload}
-//     default: return state;
-// }
-// }
-// export default changeNumber
+
 
 export const reducer=(state=initialState,action)=>{
 

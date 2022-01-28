@@ -4,13 +4,13 @@ import { fetchOne } from '../actions/index';
 import { useParams, NavLink } from "react-router-dom";
 import '../App.css';
 function Edit() {
-  // const navigate = useNavigate()
+
   let { id } = useParams();
   const myData = useSelector((state) => state.product)
   const dispatch = useDispatch();
 
   useEffect(() => {
-    //  myState = useSelector((state)=>state.reducer)
+
     dispatch(fetchOne(`https://fakestoreapi.com/products/${id}`))
     //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
